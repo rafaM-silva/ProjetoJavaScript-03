@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Site Lâmpada</title>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="img/menu.png" class="menu-img">
+            <img src="img/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Entrega</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lampada-posicao">
+            <img src="img/lamp.png" class="lamp">
+            <img src="img/light.png" class="luz" id="luz">
+        </div>
+
+        <div class="text-posicao">
+            <h1>As Melhores Lâmpadas</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fugit, tenetur veniam voluptatibus alias sapiente laudantium!</p>
+            <a href="">Saiba Como Pedir</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var luz = document.getElementById("luz");
+        function toggleBtn(){
+            btn.classList.toggle("active")
+            luz.classList.toggle("on")
+        }
+    </script>
+</body>
+</html>
